@@ -5,6 +5,7 @@ const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 
 const app = express()
+const port = process.env.PORT || 3000
 
 const viewsPath = path.join(__dirname,'../templates/views')
 const partialsPath = path.join(__dirname,'../templates/partials')
@@ -55,6 +56,6 @@ app.get('/whether',(req,res)=>{
 })
 
 
-app.listen(3000,()=>{
-  console.log('port is ready on 3000')
+app.listen(port,()=>{
+  console.log('port is ready on'+port )
 })

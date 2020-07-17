@@ -6,7 +6,7 @@ document.querySelector('form').addEventListener('submit',(e)=>{
   const location = search.value
   msgOne.textContent = 'loading.....'
   msgTwo.textContent=''
-  fetch('http://localhost:3000/whether/?address='+location).then((response)=>{
+  fetch('/whether/?address='+location).then((response)=>{
     response.json().then((data)=>{
       if(data.error){
         msgOne.textContent =  data.error

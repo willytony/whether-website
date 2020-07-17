@@ -9,8 +9,8 @@ const forecast = (latitude,longitude,callback)=>{
       callback('unable to find the location services! try another search ',undefined)
     } else {
       callback(undefined,'timeZone: '+response.body.timezone + '! current temp: '+response.body.current.temp + '! clouds: '+response.body.current.clouds+
-      '%! whether: '+response.body.current.weather[0].description +'!  wind_speed: '+response.body.current.wind_speed + 'Rain volume for last hour: '+ 
-      response.body.current.rain)
+      '%! whether: '+response.body.current.weather[0].description +'!  wind_speed: '+response.body.current.wind_speed + 'feels_like: '+ 
+      response.body.current.feels_like)
     }
   })
 }

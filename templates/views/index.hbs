@@ -2,20 +2,27 @@
 <html>
   <head>
     <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/ddea276577.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    {{>header}}
-    <h2>this is the whether forecast data</h2>
+    <div id="whetherId">
+      <h1>{{>header}}</h1>
+      <h4>Enter location for whether forecast</h4>
     
-    <form>
-      <input placeholder='search location...'>
-      <button>Submit</button>
-    </form>
-      <p id="msgOne"></p>
-      <p id="msgTwo"></p>
-   
-    {{>footer}}
-
+      <form class="search-box">
+        <input type="text" placeholder="Search Location...." class="search-txt"> 
+        <button class="search-btn">
+          <i class="fas fa-search-location"></i> 
+        </button>
+      </form>
+     <div class='data'>
+        <p id="msgOne"></p>
+        <p id="msgTwo"></p>
+     </div>
+    </div>
+      {{!-- <div> --}}
+          {{>footer}}
+      {{!-- </div> --}}
     <script src='/js/app.js'></script>
   </body>
 </html>

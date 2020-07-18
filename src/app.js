@@ -20,7 +20,7 @@ hbs.registerPartials(partialsPath)
 
 app.get('',(req,res)=>{
   res.render('index',{
-    title:'welcome to Whether Forecast'
+    title:'Welcome To Whether Forecast'
   })
 })
 

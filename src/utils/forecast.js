@@ -7,8 +7,6 @@ const forecast = (latitude,longitude,callback)=>{
       callback('unable to find the whether services',undefined)
     } else if(response.body.error){
       callback('unable to find the location services! try another search ', undefined)
-    } else if (TypeError){
-      callback('pls enter a valid address',undefined)
     }
     else {
       callback(undefined,'timeZone: '+response.body.timezone +'! current temp: '+response.body.current.temp + '! clouds: '+response.body.current.clouds+

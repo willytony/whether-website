@@ -10,13 +10,11 @@ document.querySelector('form').addEventListener('submit',(e)=>{
     response.json().then((data)=>{
       if(data.error){
         msgOne.textContent =  data.error
-      } else {
+      }
+       else {
         msgOne.textContent=data.location
         msgTwo.textContent=data.forecast
-      }
-   
+      }   
     })
   })
-
 })
-console.log('ton')

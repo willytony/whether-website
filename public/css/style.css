@@ -216,7 +216,7 @@ footer.footer .follow div i:hover{
     padding:.5rem 1rem;
   }
 }
-@media only screen and (max-width:360px){
+@media all and (max-width:360px){
   #whetherId{
     margin:3rem auto
   }

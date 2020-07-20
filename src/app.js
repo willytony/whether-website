@@ -3,6 +3,7 @@ const path = require('path')
 const hbs = require('hbs')
 const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
+const { response } = require('express')
 
 const app = express()
 const port = process.env.PORT || 3000
@@ -45,6 +46,9 @@ app.get('/whether',(req,res)=>{
     }
     forecast(latitude,longitude,(error,forecastData)=>{
       if(error){
+        return res.send({ error })
+      } 
+      else if(error){
         return res.send({ error })
       }
       res.send({

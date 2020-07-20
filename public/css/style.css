@@ -164,9 +164,15 @@ footer.footer .follow div i:hover{
 }
 
 @media (max-width: 500px){
-  #whetherId h1{
-  font-size: 1.2rem ;
-  margin:1rem;
+  #whetherId{
+    width:85vw;
+    height:70vh;
+    margin:3rem auto;
+    background-size: cover;
+  }
+  h1{
+    font-size: 1.2rem;
+    margin-top:-2rem ;
   }
   a {
     color:black;
@@ -175,12 +181,15 @@ footer.footer .follow div i:hover{
     border-bottom: 1px solid blue;
     padding:.5rem 0;
   }
+  p{
+    font-size:.9rem
+  }
   h4{
     font-size: 1.1rem;
   }
   .search-box{
     position: absolute;
-    top:45%;
+    top:50%;
     left:52%
   }
   .search-btn{
@@ -193,21 +202,11 @@ footer.footer .follow div i:hover{
     padding:0 .4rem;
   }
   .data{
-    position:relative;
-    color:white;
-    font-size: 1rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     width:60%;
     top:20%;
     left:20%;
-    padding-top:.8rem
   }
   /* footer */
-  #whetherId{
-    width:80vw;
-    height:80vh;
-    background-size: cover;
-  }
   footer.footer .container{
    grid-template-columns: repeat(1, 1fr);
   
@@ -216,14 +215,44 @@ footer.footer .follow div i:hover{
     padding:.5rem 1rem;
   }
 }
-@media all and (max-width:360px){
+@media all and (max-width:390px){
   #whetherId{
-    margin:3rem auto
+    margin:2.9rem auto
+  }
+ h1{
+    margin-top: -2rem;
+    font-size: .9rem;
   }
   .search-box{
       transform: translate(-50%,-50%);
+      top:43%;
+      height:2rem;
+      border-radius: 2rem;
+  }
+  .search-btn{
+    height: 2rem;
+    width:2rem
   }
   .search-box:hover > .search-txt{
     width:90px;
+  }
+}
+@media (max-width:310px){
+  h4{
+    font-size:1rem
+  }
+  .search-box:hover > .search-txt{
+    width:65px
+  }
+  footer.footer .container p{
+      font-size:.9rem
+  }
+  footer.footer .newsletter .form-element input{
+    width:60%;
+  }
+  footer.footer .newsletter .form-element span{
+    float: right;
+    margin:.2rem 0;
+    padding:.8rem
   }
 }

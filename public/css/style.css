@@ -162,3 +162,69 @@ footer.footer .follow div i:hover{
 .right span{
   color:red
 }
+
+@media (max-width: 500px){
+  #whetherId h1{
+  font-size: 1.2rem ;
+  margin:1rem;
+  }
+  a {
+    color:black;
+    font-size: 1rem;
+    font-weight: 500;
+    border-bottom: 1px solid blue;
+    padding:.5rem 0;
+  }
+  h4{
+    font-size: 1.1rem;
+  }
+  .search-box{
+    position: absolute;
+    top:45%;
+    left:52%
+  }
+  .search-btn{
+    width:2.2rem;
+    height:2.2rem;
+    font-size: 1rem;
+  }
+  .search-box:hover > .search-txt{
+    width:155px;
+    padding:0 .4rem;
+  }
+  .data{
+    position:relative;
+    color:white;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width:60%;
+    top:20%;
+    left:20%;
+    padding-top:.8rem
+  }
+  /* footer */
+  #whetherId{
+    width:80vw;
+    height:80vh;
+    background-size: cover;
+  }
+  footer.footer .container{
+   grid-template-columns: repeat(1, 1fr);
+  
+  }
+  footer.footer .container div{
+    padding:.5rem 1rem;
+  }
+}
+@media only screen and (max-width:360px){
+  #whetherId{
+    margin:3rem auto
+  }
+  .search-box{
+      transform: translate(-50%,-50%);
+  }
+  .search-box:hover > .search-txt{
+    width:90px;
+  }
+
+}
